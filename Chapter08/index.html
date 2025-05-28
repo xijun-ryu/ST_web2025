@@ -1,0 +1,12 @@
+<input type="text" id="todoInput">
+<button onclick="addTodo()">추가</button>
+<ul id="todoList"></ul>
+
+<script>
+  function addTodo() {
+    const input = document.getElementById("todoInput").value;
+    const li = document.createElement("li");
+    li.textContent = input;
+    document.getElementById("todoList").appendChild(li);
+  }
+</script>
