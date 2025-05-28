@@ -1,0 +1,10 @@
+<form onsubmit="handleSubmit(event)">
+  <input type="text" id="username">
+  <button type="submit">제출</button>
+</form>
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert("입력값: " + document.getElementById("username").value);
+  }
+</script>
